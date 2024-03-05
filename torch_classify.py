@@ -17,13 +17,10 @@ class CustomDataset(Dataset):
         self.raw_data = self.raw_data.drop(labels='A_id', axis = 1)
         self.raw_data = self.raw_data.to_numpy()
         self.labels = np.array(self.labels)
-
         self.raw_data = torch.from_numpy(self.raw_data).float()
         self.labels = torch.from_numpy(self.labels).float()
-
     def __len__(self):
         return len(self.labels)
-
     def __getitem__(self, idx):
         item = self.raw_data[idx]
         label = self.labels[idx]
@@ -48,7 +45,7 @@ csv_train, csv_test = split_data(csv_data)
 train_data = CustomDataset(csv_train)
 test_data = CustomDataset(csv_test)
 
-batch_size = 16
+batch_size = 5
 
 train_dataloader = DataLoader(dataset = train_data, batch_size=batch_size)
 test_dataloader = DataLoader(dataset = test_data, batch_size=batch_size)
@@ -70,28 +67,29 @@ device = (
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super().__init__()
-        self.linear_relu_stack = nn.Linear(7, 1)
+        self.linear_relu_stack = nn.Sequential(
+            nn.Linear(7, 1)
+        )
 
     def forward(self, x):
         logits = self.linear_relu_stack(x)
         return logits
 
 model = NeuralNetwork().to(device)
-loss_fn = nn.MSELoss()
-optimizer = torch.optim.SGD(model.parameters(), lr = 1e-3)
+loss_fn = nn.BCELoss()
+sigmoid = nn.Sigmoid()
+optimizer = torch.optim.SGD(model.parameters(), lr = 0.1)
 
 def train(dataloader, model, loss_fn, optimizer):
     size = len(dataloader.dataset)
     for batch, (x, y) in enumerate(dataloader):
         x, y = x.to(device), y.to(device)
-
-        pred = model(x)
+        pred = model(x)        
+        pred = sigmoid(pred)        
         loss = loss_fn(pred, y)
-
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
         if batch % 100 == 0:
             loss, current = loss.item(), (batch + 1) *len(x)
             print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
@@ -101,16 +99,16 @@ def test(dataloader, model, loss_fn):
     num_batches = len(dataloader)
     model.eval()
     test_loss, correct = 0, 0
-    with torch.no_grad():
+    with torch.no_grad(): #-----> no_grad() gradient를 트래킹 하지않음. 메모리 사용량을 줄여 연산속도를 높이기 위해 사용됨.
         for X, y in dataloader:
             X, y = X.to(device), y.to(device)
             pred = model(X)
-            test_loss += loss_fn(pred, y).item()
+            pred = sigmoid(pred)
+            test_loss += loss_fn(pred, y)
             correct += (pred.argmax(1) == y).type(torch.float).sum().item()
     test_loss /= num_batches
     correct /= size
     print(f"Test Error: \n Accuracy : {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f}\n")
-
 
 epochs = 5
 
