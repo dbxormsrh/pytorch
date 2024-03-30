@@ -1,0 +1,168 @@
+@@
+관장    NNG NNG 
+자리를    NNG NNG JKO 
+없애고    VV VV EC 
+구청이    NNG NNG JKS 
+직접    MAG MAG 
+관리하겠다며    NNG NNG XSV EP EC EC 
+조례    NNG NNG 
+개정을    NNG NNG JKO 
+추진하고    NNG NNG XSV EC 
+있다.    VX EF SF 
+@@
+이    MMD 
+아트홀은    NNG NNG NNG JX 
+한화건설이    NNP NNP NNP NNP JKS 
+2011년    SN SN SN SN NNB 
+대규모    XPN NNG NNG 
+아파트    NNG NNG NNG 
+단지를    NNG NNG JKO 
+조성하면서    NNG NNG XSV EC EC 
+주변    NNG NNG 
+지역    NNG NNG 
+주민들을    NNG NNG XSN JKO 
+위하아    VV VV EC 
+200억원    SN SN SN NR NNB 
+넘게    VV EC 
+들이어    VV VV EC 
+신축    NNG NNG 
+기증하ㄴ    NNG NNG XSV ETM 
+것으로,    NNB JKB JKB SP 
+그동안    NNG NNG NNG 
+전문    NNG NNG 
+예술인이    NNG NNG NNG JKS 
+관장을    NNG NNG JKO 
+맡아    VV EC 
+운영하아오았다.    NNG NNG XSV EC VX EP EF SF 
+@@
+주민들과    NNG NNG XSN JC 
+예술인들은    NNG NNG NNG XSN JX 
+“아파트    SS NNG NNG NNG 
+사업승인    NNG NNG NNG NNG 
+조건으로    NNG NNG JKB JKB 
+아트홀을    NNG NNG NNG JKO 
+짓어    VV EC 
+주민들에게    NNG NNG XSN JKB JKB 
+기증하ㄴ    NNG NNG XSV ETM 
+것이ㄴ데    NNB VCP EC EC 
+구청이    NNG NNG JKS 
+직접    MAG MAG 
+관리하겠다는    NNG NNG XSV EP ETM ETM 
+것은    NNB JX 
+지역    NNG NNG 
+주민들을    NNG NNG XSN JKO 
+무시하는    NNG NNG XSV ETM 
+것이며,    NNB VCP EC SP 
+박근혜    NNP NNP NNP 
+대통령의    NNG NNG NNG JKG 
+핵심    NNG NNG 
+정책이ㄴ    NNG NNG VCP ETM 
+‘문화융성정책’에도    SS NNG NNG NNG NNG NNG NNG SS JKB JX 
+역행하ㄴ다”며    NNG NNG XSV EF EF SS EC 
+반발하고    NNG NNG XSV EC 
+있다.    VX EF SF 
+@@
+남동구가    NNP NNP NNP JKS 
+발의하ㄴ    NNG NNG XSV ETM 
+관련    NNG NNG 
+조례는    NNG NNG JX 
+18일    SN SN NNB 
+구의회    NNG NNG NNG 
+본회의    NNG NNG NNG 
+통과를    NNG NNG JKO 
+앞두고    VV VV EC 
+있다.    VX EF SF 
+@@
+남동구는    NNP NNP NNP JX 
+또    MAG 
+‘남동구    SS NNP NNP NNP 
+동(洞)복지위원회’    NNG SS SH SS NNG NNG NNG NNG NNG SS 
+폐지를    NNG NNG JKO 
+추진하고    NNG NNG XSV EC 
+있다.    VX EF SF 
+@@
+이    MMD 
+위원회는    NNG NNG NNG JX 
+지나ㄴ    VV VV ETM 
+3월    SN NNB 
+‘송파구    SS NNP NNP NNP 
+세    MMN 
+모녀    NNG NNG 
+사건’    NNG NNG SS 
+이후    NNG NNG 
+정부가    NNG NNG JKS 
+전국    NNG NNG 
+232개    SN SN SN NNB 
+자치단체에    NNG NNG NNG NNG JKB 
+인적    NNG XSN 
+안전망을    NNG NNG NNG JKO 
+구축하라는    NNG NNG XSV ETM ETM 
+공문을    NNG NNG JKO 
+보내며    VV VV EC 
+‘모범사례’로    SS NNG NNG NNG NNG SS JKB 
+제시하ㄴ    NNG NNG XSV ETM 
+것이다.    NNB VCP EF SF 
+@@
+복지    NNG NNG 
+사각지대    NNG NNG NNG NNG 
+주민을    NNG NNG JKO 
+발굴하아    NNG NNG XSV EC 
+지원하고,    NNG NNG XSV EC SP 
+지역    NNG NNG 
+주민들    NNG NNG XSN 
+스스로    MAG MAG MAG 
+기금을    NNG NNG JKO 
+모으아    VV VV EC 
+위급    NNG NNG 
+상황이    NNG NNG JKS 
+발생하면    NNG NNG XSV EC 
+신속히    MAG MAG MAG 
+쓰ㄹ    VV ETM 
+수    NNB 
+있도록    VA EC EC 
+하는    VV ETM 
+기능을    NNG NNG JKO 
+맡고    VV EC 
+있다.    VX EF SF 
+@@
+남동구는    NNP NNP NNP JX 
+주민자치위원회가    NNG NNG NNG NNG NNG NNG NNG JKS 
+그런    MMD MMD 
+기능을    NNG NNG JKO 
+하고    VV EC 
+있다며    VX EC EC 
+폐지를    NNG NNG JKO 
+추진하고    NNG NNG XSV EC 
+있지만,    VX EC EC SP 
+주민들은    NNG NNG XSN JX 
+“지역    SS NNG NNG 
+유지들로    NNG NNG XSN JKB 
+구성되어    NNG NNG XSV EC 
+사실상    NNG NNG XSN 
+유명무실하아지ㄴ    NNG NNG NNG NNG XSA EC VX ETM 
+주민자치위에    NNG NNG NNG NNG NNG JKB 
+복지위원회를    NNG NNG NNG NNG NNG JKO 
+흡수하겠다는    NNG NNG XSV EP ETM ETM 
+거ㄴ    NNB JX 
+사실상    NNG NNG XSN 
+없애겠다는    VV VV EP ETM ETM 
+것”이라며    NNB SS VCP EC EC 
+반발하고    NNG NNG XSV EC 
+있다.    VX EF SF 
+@@
+신한은행도    NNP NNP NNP NNP JX 
+압수수색…    NNG NNG NNG NNG SE 
+‘팬    SS NNG 
+재팬’    NNP NNP SS 
+대출    NNG NNG 
+통하ㄴ    VV VV ETM 
+돈세탁    NNG NNG NNG 
+여부    NNG NNG 
+수사    NNG NNG 
+@@
+‘팬    SS NNG 
+재팬’    NNP NNP SS 
+부동산업…    NNG NNG NNG NNG SE 
+페이퍼컴퍼니    NNG NNG NNG NNG NNG NNG 
+가능성    NNG NNG XSN 
+@@
