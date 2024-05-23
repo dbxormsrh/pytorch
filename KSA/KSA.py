@@ -6,6 +6,10 @@ import numpy as np
 import argparse
 import hgtk
 
+dir_lstm = '../k_sentiment_Fasttext_LSTM.bin'
+dir_fasttext = '../fasttext_with_NIKL_MP_CSV.bin'
+nword = 64
+
 class SentimentLSTM(nn.Module):
     def __init__(self, input_size, hidden_size, num_layers, output_dim):
         super(SentimentLSTM, self).__init__()
@@ -102,17 +106,11 @@ device = (
 )
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-l', '--lstm', dest = 'lstm', required=True)
-    parser.add_argument('-f', '--fast', dest = 'fast', required=True)
-    parser.add_argument('-n', '--nword', dest = 'nword', required=True)
-
-    args = parser.parse_args()
     
     khaiii_api = KhaiiiApi()
-    fast_model = fasttext.load_model(args.fast)
-    lstm_model = torch.load(args.lstm)
-    num_word = int(args.nword)
+    fast_model = dir_fasttext
+    lstm_model = dir_lstm
+    num_word = nword
 
     if device == 'cuda':
         print('model to device')
@@ -124,7 +122,7 @@ if __name__ == '__main__':
             break
         pred = analyze_sent(sentence, fast_model, lstm_model, khaiii_api, num_word)
 
-        if round(pred.item()) == 1:
+        if pred.item() > 0.5:
             print('긍정')
         else:
             print('부정')
