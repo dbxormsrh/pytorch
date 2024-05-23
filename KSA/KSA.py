@@ -108,8 +108,8 @@ device = (
 if __name__ == '__main__':
     
     khaiii_api = KhaiiiApi()
-    fast_model = dir_fasttext
-    lstm_model = dir_lstm
+    fast_model = fasttext.load_model(dir_fasttext)
+    lstm_model = torch.load(dir_lstm)
     num_word = nword
 
     if device == 'cuda':
@@ -122,6 +122,10 @@ if __name__ == '__main__':
             break
         pred = analyze_sent(sentence, fast_model, lstm_model, khaiii_api, num_word)
 
+        if pred == -1:
+            continue
+        
+        print('percentage : ', pred.item())
         if pred.item() > 0.5:
             print('긍정')
         else:
